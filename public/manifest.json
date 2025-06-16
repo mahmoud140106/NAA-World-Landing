@@ -1,0 +1,21 @@
+{
+  "short_name": "NAA World",
+  "name": "NAA World",
+  "icons": [
+    {
+      "src": "Frame.png",
+      "sizes": "84x62",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "Frame.png",
+      "type": "image/png",
+      "sizes": "84x62"
+    }
+  
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

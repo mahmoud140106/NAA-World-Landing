@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <link rel="icon" href="./Frame.png" type="image/png" />
+  <link rel="icon" href="./Rectangle.svg" />
+  <link rel="icon" href="%PUBLIC_URL%/Rectangle.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./Rectangle.svg" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="google-site-verification" content="dMheEHaULo3Nc0pKfbYU9mKS8Jwbzo-ccs6GgZ2Al3A" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <meta name="robots" content="index, follow" />
+
+  <title>NAA World</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Disable right-click context menu
+      $(document).on("contextmenu", function (e) {
+        e.preventDefault();
+      });
+
+      // Disable certain key combinations (F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, etc.)
+      $(document).keydown(function (e) {
+        // F12
+        if (e.keyCode === 123) {
+          e.preventDefault();
+        }
+        // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C (Dev tools), Ctrl+U (View Source)
+        if ((e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67 || e.keyCode === 85)) || (e.ctrlKey && e.keyCode === 85)) {
+          e.preventDefault();
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
+</html>
